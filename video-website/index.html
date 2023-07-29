@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Site</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="showcase active">
+      <header>
+        <h1 class="logo">Fantasy</h1>
+        <div class="toggle active"></div>
+      </header>
+
+      <video src="./images/fantasy.mp4" autoplay loop muted></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Fantasy Life</h2>
+        <h3>Explore Something</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+          doloremque excepturi? Quidem sed omnis facere vel ipsa consectetur ut
+          dignissimos. Doloribus fugiat animi sapiente, quasi libero quaerat
+          ipsam sit labore!
+        </p>
+        <a href="#">Dive Into</a>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="#"><img src="./images/facebook.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./images/twitter.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="./images/instagram.png" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </div>
+    <script>
+      const showcase = document.querySelector(".showcase");
+      const menuToggle = document.querySelector(".toggle");
+
+      menuToggle.addEventListener("click", function () {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
